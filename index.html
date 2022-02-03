@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sound controlled animals</title>
+        <link rel="icon" href="bark.gif">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div class="header_div col-xs-12">
+                <h2>Sound Controlled Animals</h2>
+                <p>Note: Play sounds of barking, mooing, roaring and meowing</p>
+            </div>
+            <div class="main_div col-xs-12">
+                <br><br>
+                <button class="btn btn-info" onclick="start_classification()">START</button>
+                <button class="btn btn-danger" onclick="stop_classification()">STOP</button>
+                <h4 id="animalls_detected"></h4>
+                <h3 id="sound_detected"></h4>
+                <br>
+                <img src="listen.gif" id="detected_animal_img" width="300" height="300" class="img-responsive" draggable="false">
+            </div>
+            <div class="copyright_footer col-xs-12">
+                Developed By Anjor Srivastava
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
